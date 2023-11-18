@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>About Me</title>
+</head>
+<body>
+<section id="about">
+    <main>
+        <section class="about-me">
+            <div class="about-picture">
+                <img src="../img/profile.png" alt="Profile Picture">
+            </div>
+            <div class="about-description">
+                <h2 style="color: #F6043E;">ABOUT ME</h2>
+                <p>With A Warm Disposition And Persuasive Manner, A Role In Any IT
+                    Sector Would Be An Ideal Place To Start My Career. My Communication
+                    Skills And Creativity Is Very Well. I Have Some Programming Skills. Like
+                    To Research Any Topics And I Wish I Will Research Any Domain Of
+                    Software.Well-Versed In Programming Languages Including HTML,
+                    PHP, CSS, Mysql. Strong Background In Project Management And
+                    Customer Relations. I Am Looking For New And Interesting
+                    Programming(Python,React) Challenges.<br></p>
+
+                <nav class="additional-info">
+                    <ul>
+                        <li><a href="#" onclick="showContent('skills'); setActiveLink('skills-link');" id="skills-link" style="color: #F6043E;">Skills</a></li>
+                        <li><a href="#" onclick="showContent('education'); setActiveLink('education-link');" id="education-link" style="color: #F6043E;">Education</a></li>
+                        <li><a href="#" onclick="showContent('experience'); setActiveLink('experience-link');" id="experience-link" style="color: #F6043E;">Experience</a></li>
+                    </ul>
+                </nav>
+
+                <div id="skills" class="content-section" style="display: none;">
+                    <h3><b>Skills</b></h3>
+                    <h2>Ui/Ux Design</h2>
+                    <p>Designing Web, App Interfaces</p>
+                    <h2>Web Development</h2>
+                    <p>Web Development</p>
+                    <h2>Graphics Design</h2>
+                </div>
+                <div id="education" class="content-section" style="display: none;">
+                    <h3><b>Education</b></h3>
+                    <h2>2023</h2>
+                    <p>Bachelor of Science in Computer Science & Engineering<br>
+                        <strong>American International University-Bangladesh</strong>- Kuril, Dhaka<br>
+                        CGPA: 3.40<br>
+                        1ST Major: Computer Information and Systems<br>
+                        2nd Major: Software Engineering</p>
+                    <h2>2019</h2>
+                    <p>Higher Secondary School Certificate-Science<br>
+                        Milestone College-Uttara, Dhaka<br>
+                        GPA: 3.75</p>
+                    <h2>2017</h2>
+                    <p>Secondary School Certificate-Science<br>
+                        Annada Govt High School, Brahmanbaria<br>
+                        GPA: 4.41</p>
+                </div>
+                <div id="experience" class="content-section" style="display: none;">
+                    <h3><b>Experience</b></h3>
+                    <h2>July, 2023</h2>
+                    <p>Internship-- Laravel Developer<br>
+                        at Excel IT AI Ltd.</p>
+                    <h2>Oct, 2023 - Current</h2>
+                    <p>Internship-- Human Resource<br>
+                        at Janata Bank</p>
+                </div>
+            </div>
+        </section>
+        <a href="dashboard.html" class="back-button">&#60;</a>
+<script>
+    function showContent(sectionId) {
+        const sections = document.querySelectorAll('.content-section');
+        sections.forEach(section => {
+            if (section.id === sectionId) {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

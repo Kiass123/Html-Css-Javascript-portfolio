@@ -1,0 +1,59 @@
+/* Reset default margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #343433;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #343433;
+  color: white;
+  padding: 120px;
+}
+
+.intro-text {
+  flex: 1;
+  font-size: 18px;
+}
+
+.intro-text p {
+  font-size: 18px;
+}
+
+.intro-text strong {
+  color: #0af5c5;
+  font-size: 22px;
+}
+
+.profile-picture img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 0%;
+}
